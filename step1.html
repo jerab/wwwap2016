@@ -1,0 +1,17 @@
+<?php
+/********************* HTML sablona - krok 1 - zobrazeni formulare s vyberem kraju a tlacitkem s prechodem na krok 2 ***********************/
+?>
+<!doctype html5>
+<html>
+<head>
+
+</head>
+<body>
+	<select name="kraj">
+    <?php foreach ($aData as $kraj) :?>
+		<option value="<?php echo $kraj->kod?>"><?php echo $kraj->nazev?></option>
+	<?php endforeach;?>
+	</select>
+	<input type="submit" value="Vybrat kraj" />    
+</body>
+</html>
